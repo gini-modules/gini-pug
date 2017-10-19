@@ -14,7 +14,11 @@ class Pug implements Engine
         $this->_path = $path;
         $this->_vars = $vars;
         if (!self::$_pug) {
-            self::$_pug = new Pug(['pretty' => true, 'cache'=> self::cacheDir()]);
+            self::$_pug = new \Pug\Pug([
+                'pretty' => true,
+                'cache'=> self::cacheDir(),
+                'expressionLanguage' => 'js'
+            ]);
         }
     }
 
