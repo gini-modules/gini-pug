@@ -1,0 +1,11 @@
+{
+    "name": "Gini Pug",
+    "description": "Pug template compiler",
+    "version": "0.1.0",
+    "dependencies": {},
+    "composer": {
+        "require": {
+            "pug-php/pug": "@stable"
+        }
+    }
+}
